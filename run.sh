@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python train.py --data_dir=./data/zora_neale_hurston \
+python train.py --data_dir=./data/mike_richards \
 --rnn_size 128 \
 --num_layers 2 \
 --seq_length 50 \

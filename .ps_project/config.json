@@ -1,7 +1,8 @@
 {
   "project": "lstm-training",
-  "machineType": "K80",
-  "container": "tensorflow/tensorflow:1.0.0-gpu-py3",
-  "command": "bash run.sh",
-  "lastJobId": "jskll5bfhtxy9f"
+  "container": "tensorflow/tensorflow:1.5.1-gpu-py3",
+  "command": "YmFzaCBydW4uc2ggLS1wcm9qZWN0IGt5bGllX2plbm5lcg==",
+  "lastJobId": "jbd7kthhi31jn3ra",
+  "machineType": "P5000",
+  "workspace": "C:\\Users\\timof\\repos\\python\\training-lstm"
 }
