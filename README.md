@@ -25,7 +25,7 @@ Find the job id:
 
 ```txt
 Uploading training-lstm.zip [========================================] 470788/bps 100% 0.0s
-New jobId: jbd7kthhi31jn3ra
+New jobId: jikc4h6rt00kqvrg
 ```
 
 The default can also be set in train.py line 35:
@@ -37,8 +37,10 @@ parser.add_argument('--data_dir', type=str, default='data/default',
 
 ```txt
 cd ml5js_example/models
-paperspace jobs artifactsGet --jobId jbd7kthhi31jn3ra
+paperspace jobs artifactsGet --jobId jzje8j09ciij8ohd
 cd ../..
+(edit the sketch.js file)
+const lstm = ml5.LSTMGenerator("./models/champions_league/", modelReady);
 python -m http.server
 (or for Python 2)
 python -m SimpleHTTPServer
