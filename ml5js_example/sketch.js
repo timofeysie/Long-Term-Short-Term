@@ -12,7 +12,7 @@ For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/
 
 // Create the LSTM Generator passing it the model directory
 // original: hemingway
-const lstm = ml5.LSTMGenerator("./models/naomi_osaka/", modelReady);
+const lstm = ml5.LSTMGenerator("./models/belfast/", modelReady);
 
 let textInput;
 let tempSlider;
