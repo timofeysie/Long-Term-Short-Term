@@ -25,7 +25,7 @@ Find the job id:
 
 ```txt
 Uploading training-lstm.zip [========================================] 470788/bps 100% 0.0s
-New jobId: jikc4h6rt00kqvrg
+New jobId: j77xx6rd7vv4ya3z
 ```
 
 The default can also be set in train.py line 35:
@@ -37,7 +37,7 @@ parser.add_argument('--data_dir', type=str, default='data/default',
 
 ```txt
 cd ml5js_example/models
-paperspace jobs artifactsGet --jobId jzje8j09ciij8ohd
+paperspace jobs artifactsGet --jobId j77xx6rd7vv4ya3z
 cd ../..
 (edit the sketch.js file)
 const lstm = ml5.LSTMGenerator("./models/champions_league/", modelReady);
@@ -45,6 +45,54 @@ python -m http.server
 (or for Python 2)
 python -m SimpleHTTPServer
 ```
+
+## j2imvm2idgldfwee
+
+```txt
+Uploading training-lstm.zip [========================================] 569925/bps 100% 0.0s
+New jobId: j2imvm2idgldfwee
+Cluster: PS Jobs
+Git commit: 967e6e8
+Job Pending
+Waiting for job to run...
+Job Error
+Error: Error creating workspace volume: Error response from daemon: create j2imvm2idgldfwee: error while creating volume path '/var/lib/docker/volumes/j2imvm2idgldfwee/_data': mkdir /var/lib/docker/volumes/j2imvm2idgldfwee: read-only file system
+PS C:\Users\timof\repos\python\training-lstm> paperspace jobs create --container tensorflow/tensorflow:1.5.1-gpu-py3 --machineType P5000 --command "bash run.sh" --project 'LSTM training'
+```
+
+j5alirxwsjrwba5e same result.
+
+paperspace jobs artifactsGet --jobId jambapymosliea08
+
+Submit a support ticket on https://support.paperspace.com/hc/en-us
+
+Stan (Paperspace) Nov 12, 2021, 12:37 PM EST
+
+Hi Tim,
+Thanks for reaching out.   Can you give it another try now?
+We will be deprecating jobs/experiments in the near future.  We recommend using our Workflows product.  Please see: https://docs.paperspace.com/gradient/explore-train-deploy/workflows 
+
+Let us know if you have any questions.
+
+Best, -Stan
+
+Try again with j3yxq6z7kxhc3a8l.   Same result.  Let Stan know.
+
+Nov 13, 2021, 7:08 AM EST
+Hi Tim,
+Our engineer has advised this should work now. Would you please try again?
+On the other hand, please be advised that we will be deprecating this functionality soon. For this reason, it's advised to migrate to the new Workflows product as soon as possible. The documentation can be found on this [link](https://docs.paperspace.com/gradient/explore-train-deploy/workflows). If you have any questions or concerns regarding this please let us know.
+
+Kind regards, Augusto Santa Cruz (he/him) Customer Operations Representative Sr.
+
+Trying again with id: jcc706e5iu8vn9ib
+This appear to be working.
+
+On the link mentioned, it says: *Note, this is an advanced topic so if you are still early in your ML journey, it might make more sense to start with Notebooks first.*
+
+I wish I could keep on using this method until this app is validated to be worth continuing.
+
+paperspace jobs artifactsGet --jobId j8f3xfw3ebedad09
 
 ## Getting started
 

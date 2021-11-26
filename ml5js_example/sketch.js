@@ -12,7 +12,10 @@ For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/
 
 // Create the LSTM Generator passing it the model directory
 // original: hemingway
-const lstm = ml5.LSTMGenerator("./models/belfast/", modelReady);
+const lstm = ml5.LSTMGenerator(
+  "./models/Damien_Lillard_Anti_satellite_weapon_mashup/",
+  modelReady
+);
 
 let textInput;
 let tempSlider;
